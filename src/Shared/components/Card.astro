@@ -1,0 +1,28 @@
+---
+
+
+interface Props {
+    title: string
+    text: string
+    secondText?: string | undefined
+    items: string[]
+    iconColor: string
+    iconItemColor:string
+}
+const {title, text, secondText=null, items, iconColor, iconItemColor } = Astro.props as Props
+---
+    <div class='custom-card'>
+    <div class={`icon-color icon-${iconColor} mt-3 mb-3`}></div>
+    <div class='details'>
+      <h4 class="featurette-heading fw-bold lh-1" style="color: var(--arg-blueText)">{title}</h4>
+      <p class="normal-p">{text}</p>
+      <p class="normal-p">{secondText}</p>
+      {items?.map((item) =>   (
+      <div class='content'>
+      <div class={`sm-icon-color sm-icon-${iconItemColor} me-3`}></div>
+      <p class="small-p">{item}</p>
+      </div>
+      ))}
+
+      </div>
+    </div>

@@ -1,0 +1,16 @@
+{
+  "name": "siriusweb",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@fontsource/poppins": "^5.2.7",
+    "astro": "^5.15.3",
+    "bootstrap": "^5.3.8"
+  }
+}

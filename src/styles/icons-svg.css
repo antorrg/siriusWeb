@@ -1,0 +1,41 @@
+.icon-color {
+  width: 5rem;
+  height: 5rem;
+  background-color: var(--icon-color, #444);
+  mask: url('/probar.svg') no-repeat center / contain;
+  -webkit-mask: url('/probar.svg') no-repeat center / contain;
+}
+.icon-primary { --icon-color: var(--bs-primary); }
+.icon-success { --icon-color: var(--bs-success); }
+.icon-danger  { --icon-color: var(--bs-danger); }
+.icon-warning  { --icon-color: var(--bs-warning); }
+.icon-orange  { --icon-color: var(--bs-orange); }
+.icon-myblue  { --icon-color: var(--arg-blue-700); }
+.icon-purple  { --icon-color: var(--bs-purple); }
+
+.sm-icon-color {
+  width: 24px;
+  height: 24px;
+  background-color: var(--icon-color, #444);
+  mask: url('/smCheckbox.svg') no-repeat center / contain;
+  -webkit-mask: url('/smCheckbox.svg') no-repeat center / contain;
+}
+.sm-icon-primary { --icon-color: var(--bs-primary); }
+.sm-icon-success { --icon-color: var(--bs-success); }
+.sm-icon-danger  { --icon-color: var(--bs-danger); }
+.sm-icon-warning  { --icon-color: var(--bs-warning); }
+.sm-icon-orange  { --icon-color: var(--bs-orange); }
+.sm-icon-myblue  { --icon-color: var(--arg-blue-700); }
+.sm-icon-purple  { --icon-color: var(--bs-purple); }
+
+.ia-icon-color {
+  width: 24px;
+  height: 24px;
+  background-color: var(--icon-color, #444);
+  mask: url('/IAicon1.svg') no-repeat center / contain;
+  -webkit-mask: url('/IAicon1.svg') no-repeat center / contain;
+}
+.ia-icon-primary { --icon-color: var(--bs-primary); }
+.ia-icon-success { --icon-color: var(--bs-success); }
+.ia-icon-danger { --icon-color: var(--bs-danger); }
+.ia-icon-myblue  { --icon-color: var(--arg-blue-700); }

@@ -1,0 +1,23 @@
+<button 
+  id="theme-toggle"
+  class="btn btn-sm btn-outline-secondary position-fixed bottom-0 end-0 m-3"
+>
+  🌙
+</button>
+
+<script is:inline>
+  const btn = document.getElementById("theme-toggle");
+
+  // Leer tema guardado o por defecto "light"
+  let theme = localStorage.getItem("theme") || "light";
+  document.documentElement.setAttribute("data-bs-theme", theme);
+  btn.textContent = theme === "light" ? "🌙" : "☀️";
+
+  btn.addEventListener("click", () => {
+    theme = theme === "light" ? "dark" : "light";
+    document.documentElement.setAttribute("data-bs-theme", theme);
+    localStorage.setItem("theme", theme);
+    btn.textContent = theme === "light" ? "🌙" : "☀️";
+     document.dispatchEvent(new CustomEvent("theme-change", { detail: { theme } }));
+  });
+</script>

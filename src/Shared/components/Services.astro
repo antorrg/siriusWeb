@@ -1,0 +1,26 @@
+---
+import Card from './Card.astro'
+import data from '../../assets/data/data'
+
+---
+
+<section class="services-section bgp2">
+  <div class="container">
+    <div class="container text-center my-5">
+    <div class="mx-auto col-12 col-md-8 col-lg-6">
+          <p class="txt-btn txt-btn-md">Nuestros servicios</p>
+            <h3 class="featurette-heading fw-bold lh-3 mt-3" style="color: var(--arg-blueText)">
+         Soluciones completas para tu transformación digital
+        </h3>
+        <p style="color: var(--arg-blue-500); font-size: 0.9rem;">
+        Combinamos diseño estratégico, tecnología avanzada y metodologías probadas para crear experiencias digitales que generan resultados medibles y sostenibles.
+        </p>
+    </div>
+    </div>
+   <div class="cards">
+    {data.dataSolutions?.map(dt => 
+        <Card title={dt.title} text={dt.text} secondText={dt.secondText} items={dt.items} iconColor={dt.iconColor} iconItemColor={dt.iconItemColor}/>
+    )}
+</div>
+  </div>
+</section>

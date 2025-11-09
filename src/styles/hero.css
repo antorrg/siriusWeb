@@ -1,0 +1,29 @@
+.hero-section {
+  padding: 2rem 1rem;
+}
+
+.hero-section-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 🔹 centra verticalmente el texto */
+  text-align: start;
+  height: 100%;
+}
+
+.hero-section img {
+  min-width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    text-align: center;
+  }
+
+  .hero-section-text {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}

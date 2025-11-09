@@ -1,0 +1,34 @@
+---
+import Card from './Card.astro'
+import data from '../../assets/data/data'
+
+---
+
+<section class="services-section bgp1">
+  <div class="container">
+    <div class="container text-center my-5">
+    <div class="mx-auto col-12 col-md-8 col-lg-6">
+          <p class="txt-btn txt-btn-md">Nuestro proceso</p>
+            <h3 class="featurette-heading fw-bold lh-3 mt-3" style="color: var(--arg-blueText)">
+         Metodologías probadas para resultados excepcionales
+        </h3>
+        <p style="color: var(--arg-blue-500); font-size: 0.9rem;">
+        Seguimos un proceso estructurado y colaborativo que garantiza transparencia, calidad y resultados medibles para cada parte del proceso.
+        </p>
+    </div>
+    </div>
+   <div class="cards cards-cardSm me-4">
+    {data.dataMetodogies?.map(dt => 
+        <Card title={dt.title} text={dt.text} items={dt.items} iconColor={dt.iconColor} iconItemColor={dt.iconItemColor}/>
+    )}
+</div>
+   <div class="mx-auto col-12 col-md-8 col-lg-6 mt-4">
+<div class="txt-btn txt-btn-md">
+<a href="/contacto" class="text-center" style="text-decoration: none;">
+<strong style=" font-size: 1rem;">¿Listo para comenzar tu proyecto?</strong>
+<p>Agenda una consulta gratuita y descubre como podemos ayudarte a alcanzar tus objetivos</p>
+</a>
+</div>
+</div>
+  </div>
+</section>

@@ -1,0 +1,77 @@
+@import "@fontsource/poppins/400.css";
+@import "@fontsource/poppins/500.css";
+@import "@fontsource/poppins/600.css";
+@import "@fontsource/poppins/700.css";
+
+
+:root,
+[data-bs-theme=light] {
+  --bs-primary: #0d6efd !important;
+  --bs-secondary: #6c757d !important;
+  --bs-primary-text-emphasis: #052c65 !important;
+  --bs-secondary-text-emphasis: #2b2f32 !important;
+  --bs-primary-border-subtle: #9ec5fe !important;
+  --bs-secondary-border-subtle: #c4c8cb !important;
+  --icon-color: #4444;
+
+  /* 🎨 Paleta azul corporativa */
+  --arg-blue-100: hsl(232, 65%, 92%);
+  --arg-blue-200: hsl(232, 65%, 80%);
+  --arg-blue-250: hsl(232, 65%, 70%);
+  --arg-blue-300: hsl(232, 65%, 65%);
+  --arg-blue-400: hsl(232, 65%, 55%);
+  --arg-blue-500: hsl(232, 65%, 39%);
+  --arg-blue-600: hsl(232, 65%, 35%);
+  --arg-blue-700: hsl(232, 65%, 25%);
+  --arg-blue-800: hsl(232, 65%, 18%);
+  --arg-blue-900: hsl(232, 65%, 12%);
+  --arg-blueText: hsl(232, 40%, 39%);
+
+  /* 💚 Verde complementario (para success) */
+  --green-500: hsl(150, 60%, 35%);
+  --green-600: hsl(150, 60%, 30%);
+
+  /* 🔴 Rojo (para danger) */
+  --red-500: hsl(355, 70%, 45%);
+  --red-600: hsl(355, 70%, 38%);
+
+  /* 🟡 Amarillo (para warning) */
+  --yellow-500: hsl(45, 90%, 55%);
+  --yellow-600: hsl(45, 90%, 50%);
+
+  /* ⚪ Neutros */
+  --gray-100: hsl(220, 10%, 96%) !important;
+  --gray-900: hsl(220, 15%, 15%) !important;
+  --bg-light-100: hsl(220, 20%, 98%) !important;
+  --bg-light-200: hsl(220, 20%, 96%) !important;
+  --bg-light-300: hsl(220, 20%, 94%) !important;
+  --bg-light-400: hsl(220, 15%, 91%) !important;
+  --bg-light-500: hsl(220, 15%, 88%) !important;
+  --bg-light-600: hsl(220, 12%, 82%) !important;
+  --bg-light-700: hsl(220, 10%, 75%) !important;
+  --bg-light-800: hsl(220, 10%, 68%) !important;
+  --bg-light-900: hsl(220, 10%, 60%) !important;
+}
+
+
+[data-bs-theme=dark] {
+  --bs-primary-border-subtle: hsl(216, 90%, 31%) !important;
+  --bs-secondary-border-subtle: #41464b !important;
+}
+body {
+  font-family: 'Poppins', system-ui, sans-serif;
+}
+
+
+.bgp1{
+  background-color: var(--bg-light-100);
+}
+.bgp2{
+  background-color: var(--bg-light-200);
+}
+.bgp3{
+  background-color: var(--bg-light-300);
+}
+.bgp4{
+  background-color: var(--bg-light-400);
+}
