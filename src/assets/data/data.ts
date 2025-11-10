@@ -32,6 +32,27 @@ export interface Methodologies extends Omit<Solutions, 'secondText'>{}
     items : ['Diseño personalizado', 'UX optimizada para ventas', 'Integración de pagos segura.'],
     iconColor: 'success',
     iconItemColor: 'myblue'
+},{ 
+    title:'CRM y Email Marketing',
+    text: 'Diseñamos e implementamos experiencias digitales centradas en el usuario que maximizan conversiones.',
+    secondText:'Conectamos tu embudo con herramientas profesionales de CRM y automatización de marketing para maximizar ROI.',
+    items : ['MailChimp', 'Claviyo', 'Segmentación avanzada.'],
+    iconColor: 'orange',
+    iconItemColor: 'myblue'
+},{ 
+    title:'Investigación de Usuario',
+    text: 'Diseñamos e implementamos experiencias digitales centradas en el usuario que maximizan conversiones.',
+    secondText:'Realizamos estudios profundos de comportamiento y necesidades para diseñar soluciones verdaderamente efectivas.',
+    items : ['Analisis de comportamiento', 'Testing A/B continuo', 'Optimización basada en datos.'],
+    iconColor: 'danger',
+    iconItemColor: 'myblue'
+},{ 
+    title:'Embudos inteligentes',
+    text: 'Diseñamos e implementamos experiencias digitales centradas en el usuario que maximizan conversiones.',
+    secondText:'Diseñamos embudos de ventas adaptativos que se optimizan automaticamente de acuerdo al comportamiento del usuario',
+    items : ['Optimización por IA', 'Seguimiento automatizado', 'Análisis predictivo'],
+    iconColor: 'myblue',
+    iconItemColor: 'myblue'
 }]
 const dataMetodogies: Methodologies[] = [
  {  
